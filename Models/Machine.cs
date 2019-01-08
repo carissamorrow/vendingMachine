@@ -3,7 +3,7 @@ using vendingMachine.Interfaces;
 
 namespace vendingMachine.Models
 {
-  class vendingMachine
+  class Machine
   {
     public string Name { get; set; }
     public Dictionary<string, List<Consumable>> Products { get; private set; }
@@ -17,8 +17,18 @@ namespace vendingMachine.Models
       }
       Products[type].Add(product);
     }
-
-    public vendingMachine(string name)
+    public void PrintType(string type)
+    {
+      if (Products.ContainsKey(type))
+      {
+        System.Console.WriteLine(type.ToUpper());
+        Products[type].ForEach(product =>
+        {
+          System.Console.WriteLine(product.Name);
+        });
+      }
+    }
+    public Machine(string name)
     {
       Name = name;
       Products = new Dictionary<string, List<Consumable>>();

@@ -12,9 +12,10 @@ namespace vendingMachine.Models
       return Price;
     }
 
-    public Electronics(int price, string name) : base(price, name)
+    public Electronics(int price, string name)
     {
-
+      Price = price;
+      Name = name;
     }
   }
 
