@@ -40,8 +40,8 @@ namespace vendingMachine
       int choice;
       if (Int32.TryParse(Console.ReadLine(), out choice))
       {
-        System.Console.WriteLine("Thanks For Choosing");
-
+        System.Console.WriteLine("Thanks For Choosing A Product!");
+        //how to show the product name purchased?
       }
 
     }
