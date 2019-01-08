@@ -40,10 +40,33 @@ namespace vendingMachine
       int choice;
       if (Int32.TryParse(Console.ReadLine(), out choice))
       {
-        System.Console.WriteLine("Thanks For Choosing {product}!");
-        //how to show the product name purchased?
+        if (choice == 1)
+        {
+          System.Console.WriteLine("You Owe $32.00");
+        }
+        else if (choice == 2)
+        {
+          System.Console.WriteLine("You Owe $15.00");
+        }
+        else if (choice == 3)
+        {
+          System.Console.WriteLine("You Owe $2.00");
+        }
+        else if (choice == 4)
+        {
+          System.Console.WriteLine("You Owe $3.00");
+        }
+        else if (choice == 5)
+        {
+          System.Console.WriteLine("You Owe $4.00");
+        }
+        else if (choice == 6)
+        {
+          System.Console.WriteLine("You Owe $2.00");
+        }
       }
-
+      System.Console.WriteLine("Enter Amount Here");
+      //if $ is less than, say not enough. if $ is equal to, how to track it
     }
   }
 }
