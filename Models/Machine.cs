@@ -17,17 +17,6 @@ namespace vendingMachine.Models
       }
       Products[type].Add(product);
     }
-    public void PrintType(string type)
-    {
-      if (Products.ContainsKey(type))
-      {
-        System.Console.WriteLine(type.ToUpper());
-        Products[type].ForEach(product =>
-        {
-          System.Console.WriteLine(product.Name);
-        });
-      }
-    }
     public void ShowBalance(int type, IPurchasable product)
     {
       // if (Products.Add)
