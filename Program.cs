@@ -66,7 +66,15 @@ namespace vendingMachine
         }
       }
       System.Console.WriteLine("Enter Amount Here");
-      //if $ is less than, say not enough. if $ is equal to, how to track it
+
+      //if ()
+      //{
+      //   System.Console.WriteLine("Not enough money");
+      // }
+      // else
+      // {
+      //   System.Console.WriteLine("Thank you for your purchase!");
+      // }
     }
   }
 }
