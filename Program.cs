@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-// using vendingMachine.Models;
+using vendingMachine.Models;
 
 namespace vendingMachine
 {

@@ -1,9 +1,9 @@
-namespace vendingMachine
+namespace vendingMachine.Interfaces
 {
-  interface vendingMachine
+  interface IPurchasable
   {
     int Price { get; set; }
-    string UPC { get; set; }
+    string Name { get; set; }
     int GetPrice(int q);
   }
 }
