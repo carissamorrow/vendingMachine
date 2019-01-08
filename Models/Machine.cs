@@ -6,14 +6,14 @@ namespace vendingMachine.Models
   class Machine
   {
     public string Name { get; set; }
-    public Dictionary<string, List<Consumable>> Products { get; private set; }
+    public Dictionary<string, List<IPurchasable>> Products { get; private set; }
 
     public List<IPurchasable> Inventory { get; set; }
-    public void AddProduct(string type, Consumable product)
+    public void AddProduct(string type, IPurchasable product)
     {
       if (!Products.ContainsKey(type))
       {
-        Products.Add(type, new List<Consumable>());
+        Products.Add(type, new List<IPurchasable>());
       }
       Products[type].Add(product);
     }
@@ -31,7 +31,7 @@ namespace vendingMachine.Models
     public Machine(string name)
     {
       Name = name;
-      Products = new Dictionary<string, List<Consumable>>();
+      Products = new Dictionary<string, List<IPurchasable>>();
     }
   }
 }

@@ -4,12 +4,12 @@ namespace vendingMachine.Models
 {
   class Food : Consumable, IPurchasable
   {
-    public int GetPrice(int q)
+    public decimal GetPrice(decimal q)
     {
       return Price;
     }
 
-    public Food(int price, string name) : base(price, name)
+    public Food(decimal price, string name) : base(price, name)
     {
     }
   }

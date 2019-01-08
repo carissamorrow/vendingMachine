@@ -4,15 +4,15 @@ namespace vendingMachine.Models
 {
   class Electronics : IPurchasable
   {
-    public int Price { get; set; }
+    public decimal Price { get; set; }
     public string Name { get; set; }
 
-    public int GetPrice(int q)
+    public decimal GetPrice(decimal q)
     {
       return Price;
     }
 
-    public Electronics(int price, string name)
+    public Electronics(decimal price, string name)
     {
       Price = price;
       Name = name;

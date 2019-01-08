@@ -3,9 +3,9 @@ namespace vendingMachine
   abstract class Consumable
   {
     public string Name { get; set; }
-    public int Price { get; set; }
+    public decimal Price { get; set; }
 
-    public Consumable(int price, string name)
+    public Consumable(decimal price, string name)
     {
       Price = price;
       Name = name;

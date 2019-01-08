@@ -2,8 +2,8 @@ namespace vendingMachine.Interfaces
 {
   interface IPurchasable
   {
-    int Price { get; set; }
+    decimal Price { get; set; }
     string Name { get; set; }
-    int GetPrice(int q);
+    decimal GetPrice(decimal q);
   }
 }
