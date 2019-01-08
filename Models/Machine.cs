@@ -28,6 +28,13 @@ namespace vendingMachine.Models
         });
       }
     }
+    public void ShowBalance(int type, IPurchasable product)
+    {
+      // if (Products.Add)
+      // {
+      //   System.Console.WriteLine("Your Balance Is...");
+      // }
+    }
     public Machine(string name)
     {
       Name = name;
