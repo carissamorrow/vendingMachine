@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+// using vendingMachine.Models;
 
 namespace vendingMachine
 {
@@ -7,7 +8,7 @@ namespace vendingMachine
   {
     static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!");
+      Console.WriteLine("Welcome to the Vending Machine");
     }
   }
 }
