@@ -17,17 +17,15 @@ namespace vendingMachine.Models
       }
       Products[type].Add(product);
     }
-    public void ShowBalance(int type, IPurchasable product)
+    public void MoneyAdded(int type)
     {
-      // if (Products.Add)
-      // {
-      //   System.Console.WriteLine("Your Balance Is...");
-      // }
+      //how in the heck do I track the money???? HELP
     }
     public Machine(string name)
     {
       Name = name;
       Products = new Dictionary<string, List<IPurchasable>>();
     }
+
   }
 }
